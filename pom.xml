@@ -15,7 +15,7 @@
 	<name>Lahuellita</name>
 	<description>LaHuellita</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
