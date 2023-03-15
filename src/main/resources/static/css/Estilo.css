@@ -403,3 +403,11 @@ p {
     display: block;
     margin: 10px auto;
 }
+
+/* -------------------- */
+
+.post-content{
+    font-size: 90%;
+    text-align: left;
+    margin-top: 15px;
+}
