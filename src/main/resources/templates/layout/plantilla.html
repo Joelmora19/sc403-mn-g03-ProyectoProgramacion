@@ -1,66 +1,128 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-xmlns:th="http://www.thymeleaf.org"
- xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
     <head th:fragment="head">
         <meta charset="UTF-8">    
-        <link rel="stylesheet" type="text/css" th:href="@{CSS/Menu.css}">
-        <link rel="stylesheet" type="text/css" th:href="@{CSS/Estilo.css}">
-        <title>Veterinaria Huellitas</title>
-        <link rel="shortcut icon" href="../../static/image/logo.png" />
-        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
-        <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
-        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
-        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    </head>
-    
-    <body>
-        <header th:fragment="header" id="encabezado">
-            <nav id="encabezado">
-                <h1 class="company_name">Huellitas</h1>
-                <div id="icons">
-                    <a href="usuarios.html" style="padding-right: 9px"><img
-                            src="image/usuario.png" /></a>
-                    <a href="TiendaOnline.html" style="padding-right: 13px"><img
-                            src="image/bolsa.png"></a>
-                    <a href="Index.html"><img src="image/informacion.png"></a>
-                </div>
-                <div class="flexsearch">
-                    <div class="flexsearch--wrapper">
-                        <form class="flexsearch--form" method="get"
-                              action="http://www.google.com/search ">
-                            <div class="flexsearch--input-wrapper">
-                                <input class="flexsearch--input" name="q"
-                                       placeholder=" Buscar">
+            <link rel="stylesheet" type="text/css" th:href="@{CSS/Menu.css}">
+                <link rel="stylesheet" type="text/css" th:href="@{CSS/Estilo.css}">
+                    <title>Veterinaria Huellitas</title>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+                    <link rel="shortcut icon" href="../../static/image/logo.png" />
+                    <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+                    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}"/>
+                    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+                    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+                    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+                    </head>
+
+                    <body>
+                        <header th:fragment="header22" id="encabezado2">
+                            <nav class="navbar navbar-expand-lg bg-secondary">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="https://cdn.pixabay.com/photo/2021/03/23/03/56/cats-6116286_1280.png" alt="Bootstrap" width="30" height="24">
+                                    </a>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="index.html">Index</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="usuarios.html">Usuarios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ServicioVeterinarios.html">Servicios Veterinarios</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ServiciosAdicionales.html">Servicios Adicionales</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="Cursos.html">Cursos</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="Blog.html" >Blog</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="Adopcion.html" >Adopcion</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="campaña.html" >Campañas</a>
+                                            </li>
+
+                                            <!-- comment 
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Dropdown
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled">Disabled</a>
+                                            </li>
+                                            -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </header>
+
+                        <header th:fragment="header" id="encabezado">
+                            <nav id="encabezado">
+                                <h1 class="company_name">Huellitas</h1>
+                                <div id="icons">
+                                    <a href="usuarios.html" style="padding-right: 9px"><img
+                                            src="image/usuario.png" /></a>
+                                    <a href="TiendaOnline.html" style="padding-right: 13px"><img
+                                            src="image/bolsa.png"></a>
+                                    <a href="Index.html"><img src="image/informacion.png"></a>
+                                </div>
+                                <div class="flexsearch">
+                                    <div class="flexsearch--wrapper">
+                                        <form class="flexsearch--form" method="get"
+                                              action="http://www.google.com/search ">
+                                            <div class="flexsearch--input-wrapper">
+                                                <input class="flexsearch--input" name="q"
+                                                       placeholder=" Buscar">
+                                            </div>
+                                            <input class="flexsearch--submit" type="submit"
+                                                   value="&#10140;" />
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="enlaces">
+                                    <a href="index.html" id="enlace-individual">Inicio</a>
+                                    <a href="ServicioVeterinarios.html" id="enlace-individual">Servicios
+                                        veterinarios</a>
+                                    <a href="ServiciosAdicionales.html" id="enlace-individual">Servicios
+                                        adicionales</a>
+                                    <a href="Cursos.html" id="enlace-individual">Cursos</a>
+                                    <a href="Blog.html" id="enlace-individual">Blog</a>
+                                    <a href="Adopcion.html" id="enlace-individual">Adopcion</a>
+                                    <a href="campaña.html" id="enlace-individual">Campañas</a>
+                                </div>
+                            </nav>
+                        </header>
+
+                        <footer th:fragment="footer22">
+                            <div class="text-center my-2 p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                © 2023 Copyright:
+                                <a class="text-dark" >Huellitas 2023</a>
+                                <a href="https://www.whatsapp.com/" style="padding-right: 5px"><img
+                                        src="image/whatsapp.png" /></a>
+                                <a href="https://www.instagram.com/" style="padding-right: 5px"><img
+                                        src="image/instagram.png" /></a>
+                                <a href="https://www.facebook.com/"><img src="image/facebook.png" /></a>
                             </div>
-                            <input class="flexsearch--submit" type="submit"
-                                   value="&#10140;" />
-                        </form>
-                    </div>
-                </div>
-                <div class="enlaces">
-                    <a href="index.html" id="enlace-individual">Inicio</a>
-                    <a href="ServicioVeterinarios.html" id="enlace-individual">Servicios
-                        veterinarios</a>
-                    <a href="ServiciosAdicionales.html" id="enlace-individual">Servicios
-                        adicionales</a>
-                    <a href="Cursos.html" id="enlace-individual">Cursos</a>
-                    <a href="Blog.html" id="enlace-individual">Blog</a>
-                    <a href="Adopcion.html" id="enlace-individual">Adopcion</a>
-                    <a href="campaña.html" id="enlace-individual">Campañas</a>
-                </div>
-            </nav>
-        </header>
 
-        <footer th:fragment="footer" id="footer">
-            <a href="https://www.whatsapp.com/" style="padding-right: 5px"><img
-                src="image/whatsapp.png" /></a>
-        <a href="https://www.instagram.com/" style="padding-right: 5px"><img
-                src="image/instagram.png" /></a>
-        <a href="https://www.facebook.com/"><img src="image/facebook.png" /></a>
-        <p id="infofooter">© 2023 Huellitas SA. Todos los derechos reservados</p>
-        </footer>
-
-    </body>
-</html>
+                            
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+                            <script th:src="@{/js/funciones.js}"></script>
+                        </footer>
+                    </body>
+                    </html>
